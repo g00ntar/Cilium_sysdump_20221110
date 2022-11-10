@@ -1,0 +1,76 @@
+🔍 Collecting sysdump with cilium-cli version: v0.12.6, args: [sysdump]
+🔍 Collecting Kubernetes nodes
+🔍 Collect Kubernetes nodes
+🔍 Collecting Kubernetes events
+🔍 Collect Kubernetes version
+🔍 Collecting Kubernetes pods
+🔍 Collecting Kubernetes namespaces
+🔍 Collecting Kubernetes services
+🔍 Collecting Cilium nodes
+🔍 Collecting Kubernetes endpoints
+🔍 Collecting Kubernetes network policies
+🔍 Collecting Cilium network policies
+🔍 Collecting Kubernetes leases
+🔍 Collecting Cilium egress NAT policies
+🔍 Collecting Cilium cluster-wide network policies
+🔍 Collecting Cilium endpoints
+🔍 Collecting Cilium local redirect policies
+🔍 Collecting Cilium identities
+🔍 Collecting Kubernetes pods summary
+🔍 Collecting Ingresses
+🔍 Collecting CiliumClusterwideEnvoyConfigs
+🔍 Collecting CiliumEnvoyConfigs
+🔍 Collecting Cilium etcd secret
+🔍 Collecting the Cilium configuration
+🔍 Collecting the Cilium daemonset(s)
+🔍 Collecting the Hubble daemonset
+🔍 Collecting the Hubble Relay configuration
+🔍 Collecting the Hubble Relay deployment
+🔍 Collecting the Hubble UI deployment
+🔍 Collecting the Cilium operator deployment
+🔍 Collecting the 'clustermesh-apiserver' deployment
+🔍 Collecting the CNI configuration files from Cilium pods
+🔍 Collecting the CNI configmap
+🔍 Collecting gops stats from Cilium pods
+🔍 Collecting gops stats from Hubble pods
+🔍 Collecting gops stats from Hubble Relay pods
+🔍 Collecting bugtool output from Cilium pods
+🔍 Collecting logs from Cilium pods
+🔍 Collecting logs from Cilium operator pods
+🔍 Collecting logs from 'clustermesh-apiserver' pods
+🔍 Collecting logs from Hubble pods
+🔍 Collecting logs from Hubble Relay pods
+🔍 Collecting logs from Hubble UI pods
+🔍 Collecting bugtool output from Tetragon pods
+🔍 Collecting platform-specific data
+🔍 Collecting kvstore data
+🔍 Collecting Hubble flows from Cilium pods
+⚠️ Container "cilium-agent" for pod "cilium-cbzlp" in namespace "kube-system" is not running. Trying EphemeralContainer or separate Pod instead...
+⚠️ EphemeralContainer "sysdump-1668106723" on pod "cilium-cbzlp" in namespace "kube-system" never reached Running status (falling back to separate Pod)
+⚠️ Container "cilium-agent" on pod "cilium-cbzlp" in namespace "kube-system" is not running. Creating exec Pod.
+⚠️ The following tasks failed, the sysdump may be incomplete:
+⚠️ [10] Collecting Cilium network policies: failed to collect Cilium network policies: the server could not find the requested resource (get ciliumnetworkpolicies.cilium.io)
+⚠️ [11] Collecting Cilium cluster-wide network policies: failed to collect Cilium cluster-wide network policies: the server could not find the requested resource (get ciliumclusterwidenetworkpolicies.cilium.io)
+⚠️ [12] Collecting Cilium egress NAT policies: failed to collect Cilium egress NAT policies: the server could not find the requested resource (get ciliumegressnatpolicies.cilium.io)
+⚠️ [13] Collecting Cilium local redirect policies: failed to collect Cilium local redirect policies: the server could not find the requested resource (get ciliumlocalredirectpolicies.cilium.io)
+⚠️ [14] Collecting Cilium endpoints: failed to collect Cilium endpoints: the server could not find the requested resource (get ciliumendpoints.cilium.io)
+⚠️ [15] Collecting Cilium identities: failed to collect Cilium identities: the server could not find the requested resource (get ciliumidentities.cilium.io)
+⚠️ [16] Collecting Cilium nodes: failed to collect Cilium nodes: the server could not find the requested resource (get ciliumnodes.cilium.io)
+⚠️ [18] Collecting CiliumClusterwideEnvoyConfigs: failed to collect CiliumClusterwideEnvoyConfigs: the server could not find the requested resource (get ciliumclusterwideenvoyconfigs.cilium.io)
+⚠️ [19] Collecting CiliumEnvoyConfigs: failed to collect CiliumEnvoyConfigs: the server could not find the requested resource (get ciliumenvoyconfigs.cilium.io)
+⚠️ [20] Collecting Cilium etcd secret: failed to collect Cilium etcd secret: an empty namespace may not be set when a resource name is provided
+⚠️ [21] Collecting the Cilium configuration: failed to collect the Cilium configuration: an empty namespace may not be set when a resource name is provided
+⚠️ [23] Collecting the Hubble daemonset: failed to collect the Hubble daemonset: an empty namespace may not be set when a resource name is provided
+⚠️ [24] Collecting the Hubble Relay configuration: failed to collect the Hubble Relay configuration: an empty namespace may not be set when a resource name is provided
+⚠️ [25] Collecting the Hubble Relay deployment: failed to collect the Hubble Relay deployment: an empty namespace may not be set when a resource name is provided
+⚠️ [26] Collecting the Hubble UI deployment: failed to collect the Hubble UI deployment: an empty namespace may not be set when a resource name is provided
+⚠️ [27] Collecting the Cilium operator deployment: failed to collect the Cilium operator deployment: an empty namespace may not be set when a resource name is provided
+⚠️ [28] Collecting the 'clustermesh-apiserver' deployment: failed to collect the 'clustermesh-apiserver' deployment: an empty namespace may not be set when a resource name is provided
+⚠️ [30] Collecting the CNI configmap: failed to collect the CNI configuration configmap: an empty namespace may not be set when a resource name is provided
+⚠️ cniconflist-cilium-cbzlp: unable to upgrade connection: container not found ("cilium-agent")
+⚠️ gops-cilium-cbzlp-memstats: failed to list processes "cilium-cbzlp" ("cilium-agent") in namespace "kube-system": unable to upgrade connection: container not found ("cilium-agent")
+⚠️ gops-cilium-cbzlp-stack: failed to list processes "cilium-cbzlp" ("cilium-agent") in namespace "kube-system": unable to upgrade connection: container not found ("cilium-agent")
+⚠️ gops-cilium-cbzlp-stats: failed to list processes "cilium-cbzlp" ("cilium-agent") in namespace "kube-system": unable to upgrade connection: container not found ("cilium-agent")
+⚠️ [43] Collecting kvstore data: failed to get cilium-config ConfigMap: an empty namespace may not be set when a resource name is provided
+⚠️ hubble-flows-cilium-cbzlp: failed to collect hubble flows for "cilium-cbzlp" in namespace "kube-system": unable to upgrade connection: container not found ("cilium-agent"): 
+⚠️ Please note that depending on your Cilium version and installation options, this may be expected

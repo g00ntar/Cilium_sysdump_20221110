@@ -1,0 +1,9 @@
+NAMESPACE     NAME                                      READY   STATUS              RESTARTS       AGE     IP             NODE         NOMINATED NODE   READINESS GATES
+kube-system   local-path-provisioner-5b5579c644-vwmfx   0/1     ContainerCreating   0              56m     <none>         lima-k3s-1   <none>           <none>
+kube-system   metrics-server-5c8978b444-6lc2q           0/1     ContainerCreating   0              56m     <none>         lima-k3s-1   <none>           <none>
+kube-system   helm-install-traefik-cdw9j                0/1     ContainerCreating   0              56m     <none>         lima-k3s-1   <none>           <none>
+kube-system   helm-install-traefik-crd-8w2hr            0/1     ContainerCreating   0              56m     <none>         lima-k3s-1   <none>           <none>
+kube-system   coredns-75fc8f8fff-qbkdn                  0/1     ContainerCreating   0              56m     <none>         lima-k3s-1   <none>           <none>
+kube-system   cilium-operator-76c6d95785-tzv8t          0/1     Pending             0              8m15s   <none>         <none>       <none>           <none>
+kube-system   cilium-operator-76c6d95785-jzz9l          0/1     CrashLoopBackOff    4 (67s ago)    8m15s   192.168.5.15   lima-k3s-1   <none>           <none>
+kube-system   cilium-cbzlp                              0/1     CrashLoopBackOff    6 (2m3s ago)   8m15s   192.168.5.15   lima-k3s-1   <none>           <none>

@@ -1,0 +1,1 @@
+2022-11-10T18:50:28.018275196Z level=info msg="Mounted cgroupv2 filesystem at /run/cilium/cgroupv2" subsys=cgroups

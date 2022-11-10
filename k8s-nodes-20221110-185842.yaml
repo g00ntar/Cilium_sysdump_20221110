@@ -1,0 +1,112 @@
+apiVersion: v1
+items:
+- metadata:
+    annotations:
+      k3s.io/hostname: lima-k3s-1
+      k3s.io/internal-ip: 192.168.5.15,fec0::5055:55ff:fed4:b233
+      k3s.io/node-args: '["server","--write-kubeconfig-mode","644","--flannel-backend","none","--disable-network-policy","--disable-kube-proxy","disable-cloud-controller","--disable","servicelb"]'
+      k3s.io/node-config-hash: UMTPBTFIZUFLSCN3GP3P3QVP3MHRWFDPWXARZOB4JJJMBNKGWAZA====
+      k3s.io/node-env: '{"K3S_DATA_DIR":"/var/lib/rancher/k3s/data/48f93e534af9689a3f627296d5e208546e2d71a04a34d713e2eb39ae05e6fd77"}'
+      node.alpha.kubernetes.io/ttl: "0"
+      volumes.kubernetes.io/controller-managed-attach-detach: "true"
+    creationTimestamp: "2022-11-10T18:02:06Z"
+    finalizers:
+    - wrangler.cattle.io/node
+    labels:
+      beta.kubernetes.io/arch: arm64
+      beta.kubernetes.io/instance-type: k3s
+      beta.kubernetes.io/os: linux
+      egress.k3s.io/cluster: "true"
+      kubernetes.io/arch: arm64
+      kubernetes.io/hostname: lima-k3s-1
+      kubernetes.io/os: linux
+      node-role.kubernetes.io/control-plane: "true"
+      node-role.kubernetes.io/master: "true"
+      node.kubernetes.io/instance-type: k3s
+    name: lima-k3s-1
+    resourceVersion: "1776"
+    uid: c7480fc5-e95d-4afa-bf70-9888e22e6f57
+  spec:
+    podCIDR: 10.42.0.0/24
+    podCIDRs:
+    - 10.42.0.0/24
+    providerID: k3s://lima-k3s-1
+  status:
+    addresses:
+    - address: 192.168.5.15
+      type: InternalIP
+    - address: fec0::5055:55ff:fed4:b233
+      type: InternalIP
+    - address: lima-k3s-1
+      type: Hostname
+    allocatable:
+      cpu: "4"
+      ephemeral-storage: "99833802265"
+      hugepages-1Gi: "0"
+      hugepages-2Mi: "0"
+      hugepages-32Mi: "0"
+      hugepages-64Ki: "0"
+      memory: 4014244Ki
+      pods: "110"
+    capacity:
+      cpu: "4"
+      ephemeral-storage: 102625208Ki
+      hugepages-1Gi: "0"
+      hugepages-2Mi: "0"
+      hugepages-32Mi: "0"
+      hugepages-64Ki: "0"
+      memory: 4014244Ki
+      pods: "110"
+    conditions:
+    - lastHeartbeatTime: "2022-11-10T18:54:17Z"
+      lastTransitionTime: "2022-11-10T18:02:06Z"
+      message: kubelet has sufficient memory available
+      reason: KubeletHasSufficientMemory
+      status: "False"
+      type: MemoryPressure
+    - lastHeartbeatTime: "2022-11-10T18:54:17Z"
+      lastTransitionTime: "2022-11-10T18:02:06Z"
+      message: kubelet has no disk pressure
+      reason: KubeletHasNoDiskPressure
+      status: "False"
+      type: DiskPressure
+    - lastHeartbeatTime: "2022-11-10T18:54:17Z"
+      lastTransitionTime: "2022-11-10T18:02:06Z"
+      message: kubelet has sufficient PID available
+      reason: KubeletHasSufficientPID
+      status: "False"
+      type: PIDPressure
+    - lastHeartbeatTime: "2022-11-10T18:54:17Z"
+      lastTransitionTime: "2022-11-10T18:08:23Z"
+      message: kubelet is posting ready status
+      reason: KubeletReady
+      status: "True"
+      type: Ready
+    daemonEndpoints:
+      kubeletEndpoint:
+        Port: 10250
+    images:
+    - names:
+      - quay.io/cilium/cilium@sha256:30de50c4dc0a1e1077e9e7917a54d5cab253058b3f779822aec00f5c817ca826
+      sizeBytes: 157594200
+    - names:
+      - quay.io/cilium/operator-generic@sha256:816ec1da586139b595eeb31932c61a7c13b07fb4a0255341c0e0f18608e84eff
+      sizeBytes: 17119038
+    - names:
+      - docker.io/rancher/mirrored-pause@sha256:74c4244427b7312c5b901fe0f67cbc53683d06f4f24c6faee65d4182bf0fa893
+      - docker.io/rancher/mirrored-pause:3.6
+      sizeBytes: 253243
+    nodeInfo:
+      architecture: arm64
+      bootID: 3d081c89-d397-4f1b-8848-4748dd965430
+      containerRuntimeVersion: containerd://1.6.8-k3s1
+      kernelVersion: 5.15.74-0-virt
+      kubeProxyVersion: v1.25.3+k3s1
+      kubeletVersion: v1.25.3+k3s1
+      machineID: 77c4016ece31b7440a56863fa24b2a1d
+      operatingSystem: linux
+      osImage: Alpine Linux v3.16
+      systemUUID: 77c4016ece31b7440a56863fa24b2a1d
+kind: NodeList
+metadata:
+  resourceVersion: "1884"

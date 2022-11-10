@@ -1,0 +1,37 @@
+apiVersion: coordination.k8s.io/v1
+items:
+- apiVersion: coordination.k8s.io/v1
+  kind: Lease
+  metadata:
+    creationTimestamp: "2022-11-10T18:02:16Z"
+    managedFields:
+    - apiVersion: coordination.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"c7480fc5-e95d-4afa-bf70-9888e22e6f57"}: {}
+        f:spec:
+          f:holderIdentity: {}
+          f:leaseDurationSeconds: {}
+          f:renewTime: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:58:35Z"
+    name: lima-k3s-1
+    namespace: kube-node-lease
+    ownerReferences:
+    - apiVersion: v1
+      kind: Node
+      name: lima-k3s-1
+      uid: c7480fc5-e95d-4afa-bf70-9888e22e6f57
+    resourceVersion: "1882"
+    uid: 001e30e9-2949-4e6d-8b96-0f8d9b6d7e3e
+  spec:
+    holderIdentity: lima-k3s-1
+    leaseDurationSeconds: 40
+    renewTime: "2022-11-10T18:58:35.070942Z"
+kind: LeaseList
+metadata:
+  resourceVersion: "1884"

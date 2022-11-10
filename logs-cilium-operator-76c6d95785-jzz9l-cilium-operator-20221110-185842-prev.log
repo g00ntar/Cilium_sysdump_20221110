@@ -1,0 +1,76 @@
+2022-11-10T18:56:30.487433661Z level=info msg="Started gops server" address="127.0.0.1:9891" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487787619Z level=info msg="  --bgp-announce-lb-ip='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487791452Z level=info msg="  --bgp-config-path='/var/lib/cilium/bgp/config.yaml'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487792702Z level=info msg="  --ces-max-ciliumendpoints-per-ces='100'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487793661Z level=info msg="  --ces-slice-mode='cesSliceModeIdentity'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487794952Z level=info msg="  --cilium-endpoint-gc-interval='5m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487795827Z level=info msg="  --cilium-pod-labels='k8s-app=cilium'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487796911Z level=info msg="  --cilium-pod-namespace=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487797786Z level=info msg="  --cluster-id='0'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487798661Z level=info msg="  --cluster-name='default'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487799577Z level=info msg="  --cluster-pool-ipv4-cidr='10.42.0.0/24'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487800411Z level=info msg="  --cluster-pool-ipv4-mask-size='24'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487801327Z level=info msg="  --cluster-pool-ipv6-cidr=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487802869Z level=info msg="  --cluster-pool-ipv6-mask-size='112'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487803827Z level=info msg="  --cmdref=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487804786Z level=info msg="  --cnp-node-status-gc-interval='2m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487805786Z level=info msg="  --cnp-status-update-interval='1s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487806619Z level=info msg="  --config=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487807452Z level=info msg="  --config-dir='/tmp/cilium/config-map'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487808286Z level=info msg="  --debug='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487809202Z level=info msg="  --disable-cnp-status-updates='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487810077Z level=info msg="  --disable-endpoint-crd='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487810952Z level=info msg="  --enable-cilium-endpoint-slice='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487811827Z level=info msg="  --enable-ipv4='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487812702Z level=info msg="  --enable-ipv4-egress-gateway='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487813536Z level=info msg="  --enable-ipv6='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487814369Z level=info msg="  --enable-k8s-api-discovery='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487815202Z level=info msg="  --enable-k8s-endpoint-slice='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487816036Z level=info msg="  --enable-k8s-event-handover='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487819327Z level=info msg="  --enable-local-redirect-policy='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487820244Z level=info msg="  --enable-metrics='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487821244Z level=info msg="  --gops-port='9891'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487822119Z level=info msg="  --identity-allocation-mode='crd'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487822952Z level=info msg="  --identity-gc-interval='15m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487828827Z level=info msg="  --identity-gc-rate-interval='1m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487829994Z level=info msg="  --identity-gc-rate-limit='2500'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487832994Z level=info msg="  --identity-heartbeat-timeout='30m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487834661Z level=info msg="  --ingress-lb-annotation-prefixes='service.beta.kubernetes.io,service.kubernetes.io,cloud.google.com'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487838244Z level=info msg="  --instance-tags-filter=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487840286Z level=info msg="  --ipam='cluster-pool'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487926244Z level=info msg="  --k8s-api-server=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487929244Z level=info msg="  --k8s-heartbeat-timeout='30s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487930244Z level=info msg="  --k8s-kubeconfig-path=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487931244Z level=info msg="  --k8s-namespace='kube-system'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487932161Z level=info msg="  --k8s-service-proxy-name=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487933119Z level=info msg="  --kvstore=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487933952Z level=info msg="  --kvstore-lease-ttl='15m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487934786Z level=info msg="  --kvstore-opt=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487935952Z level=info msg="  --leader-election-lease-duration='15s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487936786Z level=info msg="  --leader-election-renew-deadline='10s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487937619Z level=info msg="  --leader-election-retry-period='2s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487938494Z level=info msg="  --limit-ipam-api-burst='4'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.487939327Z level=info msg="  --limit-ipam-api-qps='20'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488081661Z level=info msg="  --log-driver=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488086369Z level=info msg="  --log-opt=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488087494Z level=info msg="  --nodes-gc-interval='5m0s'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488088452Z level=info msg="  --operator-api-serve-addr='127.0.0.1:9234'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488089327Z level=info msg="  --operator-prometheus-serve-addr=':9963'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488090244Z level=info msg="  --parallel-alloc-workers='50'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488091077Z level=info msg="  --pprof='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488091911Z level=info msg="  --pprof-port='6061'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488092702Z level=info msg="  --remove-cilium-node-taints='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488093536Z level=info msg="  --set-cilium-is-up-condition='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488094369Z level=info msg="  --skip-crd-creation='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488095202Z level=info msg="  --subnet-ids-filter=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488096036Z level=info msg="  --subnet-tags-filter=''" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488096869Z level=info msg="  --synchronize-k8s-nodes='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488097702Z level=info msg="  --synchronize-k8s-services='true'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488100452Z level=info msg="  --unmanaged-pod-watcher-interval='15'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488101452Z level=info msg="  --version='false'" subsys=cilium-operator-generic
+2022-11-10T18:56:30.488102369Z level=info msg="Cilium Operator 1.12.3 1c466d2 2022-10-12T11:33:37+01:00 go version go1.18.6 linux/arm64" subsys=cilium-operator-generic
+2022-11-10T18:56:30.497112619Z level=info msg="Starting apiserver on address 127.0.0.1:9234" subsys=cilium-operator-api
+2022-11-10T18:56:30.497119744Z level=info msg="Establishing connection to apiserver" host="https://10.43.0.1:443" subsys=k8s
+2022-11-10T18:57:05.503600302Z level=info msg="Establishing connection to apiserver" host="https://10.43.0.1:443" subsys=k8s
+2022-11-10T18:57:35.512128108Z level=error msg="Unable to contact k8s api-server" error="Get \"https://10.43.0.1:443/api/v1/namespaces/kube-system\": dial tcp 10.43.0.1:443: i/o timeout" ipAddr="https://10.43.0.1:443" subsys=k8s
+2022-11-10T18:57:35.512181108Z level=fatal msg="Unable to connect to Kubernetes apiserver" error="unable to create k8s client: unable to create k8s client: Get \"https://10.43.0.1:443/api/v1/namespaces/kube-system\": dial tcp 10.43.0.1:443: i/o timeout" subsys=cilium-operator-generic

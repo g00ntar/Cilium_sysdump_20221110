@@ -1,0 +1,1 @@
+version.Info{Major:"1", Minor:"25", GitVersion:"v1.25.3+k3s1", GitCommit:"f2585c1671b31b4b34bddbb3bf4e7d69662b0821", GitTreeState:"clean", BuildDate:"2022-10-25T20:04:19Z", GoVersion:"go1.19.2", Compiler:"gc", Platform:"linux/arm64"}

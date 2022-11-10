@@ -1,0 +1,130 @@
+apiVersion: v1
+items:
+- metadata:
+    creationTimestamp: "2022-11-10T18:02:05Z"
+    labels:
+      endpointslice.kubernetes.io/skip-mirror: "true"
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:endpointslice.kubernetes.io/skip-mirror: {}
+        f:subsets: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:05Z"
+    name: kubernetes
+    namespace: default
+    resourceVersion: "195"
+    uid: dde781a7-26f7-48d4-a916-13265b2e8388
+  subsets:
+  - addresses:
+    - ip: 192.168.5.15
+    ports:
+    - name: https
+      port: 6443
+      protocol: TCP
+- metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2022-11-10T18:02:09Z"
+    creationTimestamp: "2022-11-10T18:02:20Z"
+    labels:
+      k8s-app: kube-dns
+      kubernetes.io/cluster-service: "true"
+      kubernetes.io/name: CoreDNS
+      objectset.rio.cattle.io/hash: bce283298811743a0386ab510f2f67ef74240c57
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:endpoints.kubernetes.io/last-change-trigger-time: {}
+          f:labels:
+            .: {}
+            f:k8s-app: {}
+            f:kubernetes.io/cluster-service: {}
+            f:kubernetes.io/name: {}
+            f:objectset.rio.cattle.io/hash: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:20Z"
+    name: kube-dns
+    namespace: kube-system
+    resourceVersion: "406"
+    uid: 4c2dccb0-1ba8-42b4-9986-117e4dd080b6
+- metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2022-11-10T18:02:10Z"
+    creationTimestamp: "2022-11-10T18:02:20Z"
+    labels:
+      kubernetes.io/cluster-service: "true"
+      kubernetes.io/name: Metrics-server
+      objectset.rio.cattle.io/hash: a5d3bc601c871e123fa32b27f549b6ea770bcf4a
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:endpoints.kubernetes.io/last-change-trigger-time: {}
+          f:labels:
+            .: {}
+            f:kubernetes.io/cluster-service: {}
+            f:kubernetes.io/name: {}
+            f:objectset.rio.cattle.io/hash: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:20Z"
+    name: metrics-server
+    namespace: kube-system
+    resourceVersion: "407"
+    uid: fd90f5df-3f39-4c11-9f80-750265a4053b
+- metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2022-11-10T18:50:27Z"
+    creationTimestamp: "2022-11-10T18:50:27Z"
+    labels:
+      app.kubernetes.io/managed-by: Helm
+      k8s-app: cilium
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:endpoints.kubernetes.io/last-change-trigger-time: {}
+          f:labels:
+            .: {}
+            f:app.kubernetes.io/managed-by: {}
+            f:k8s-app: {}
+        f:subsets: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:50:27Z"
+    name: hubble-peer
+    namespace: kube-system
+    resourceVersion: "1641"
+    uid: a39093be-bbfd-4bd5-af36-cf55bd9420c0
+  subsets:
+  - notReadyAddresses:
+    - ip: 192.168.5.15
+      nodeName: lima-k3s-1
+      targetRef:
+        kind: Pod
+        name: cilium-cbzlp
+        namespace: kube-system
+        uid: f431a8c6-1f57-4db6-9679-472213eda73c
+    ports:
+    - name: peer-service
+      port: 4244
+      protocol: TCP
+kind: EndpointsList
+metadata:
+  resourceVersion: "1884"

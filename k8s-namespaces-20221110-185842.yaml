@@ -1,0 +1,97 @@
+apiVersion: v1
+items:
+- metadata:
+    creationTimestamp: "2022-11-10T18:02:04Z"
+    labels:
+      kubernetes.io/metadata.name: default
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:kubernetes.io/metadata.name: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:04Z"
+    name: default
+    resourceVersion: "4"
+    uid: 4920b41f-1b31-49d0-95c0-d4638358677e
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- metadata:
+    creationTimestamp: "2022-11-10T18:02:04Z"
+    labels:
+      kubernetes.io/metadata.name: kube-system
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:kubernetes.io/metadata.name: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:04Z"
+    name: kube-system
+    resourceVersion: "6"
+    uid: bf49fcf0-46a4-41d7-8209-29f6eee6eddf
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- metadata:
+    creationTimestamp: "2022-11-10T18:02:04Z"
+    labels:
+      kubernetes.io/metadata.name: kube-public
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:kubernetes.io/metadata.name: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:04Z"
+    name: kube-public
+    resourceVersion: "8"
+    uid: fc4dc17f-1ff8-4f84-b72c-4aa069cf3be0
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- metadata:
+    creationTimestamp: "2022-11-10T18:02:04Z"
+    labels:
+      kubernetes.io/metadata.name: kube-node-lease
+    managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            .: {}
+            f:kubernetes.io/metadata.name: {}
+      manager: k3s
+      operation: Update
+      time: "2022-11-10T18:02:04Z"
+    name: kube-node-lease
+    resourceVersion: "9"
+    uid: 68a81cea-f632-4c70-9d2b-55ca85d8ed72
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+kind: NamespaceList
+metadata:
+  resourceVersion: "1884"
